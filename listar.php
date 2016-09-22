@@ -19,7 +19,9 @@
 					<thead>
 						<tr>
 							<th >Id</th>
-							<th>Apellidos y Nombres</th>
+							<th>Apellido Paterno</th>
+							<th>Apellido Materno</th>
+							<th>Nombres</th>
 							<th></th>
 						</tr>
 					</thead>
@@ -35,6 +37,8 @@
 							<tr>
 								<th><?php echo $fila['personas_id']; ?></th>
 	 							<td><?php echo $fila['paterno']; ?></td>
+	 							<td><?php echo $fila['materno']; ?></td>
+	 							<td><?php echo $fila['nombres']; ?></td>
 								<td><a href="modificar.datos.php?id=<?php echo $fila['personas_id']; ?>" class="ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext">Modificar</a></td>
 							</tr>
 						<?php
