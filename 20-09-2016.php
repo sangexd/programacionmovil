@@ -18,10 +18,10 @@
 				<?php include("inc/conexion.php");?>
 				<?php $sql="SELECT * FROM personas";
 					  $resultado=$conexion->query($sql);?>
-				<ul data-role="listview"><a href="javascript:alert('Sony');">
+				<ul data-role="listview">
 				<?php while($fila=$resultado->fetch_assoc()){
 					echo "<li>".$fila['nombres']."</li>";
-				}?></a>
+				}?>
 				</ul>
 			</div>
 			<div data-role="footer">
