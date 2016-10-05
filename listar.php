@@ -22,7 +22,8 @@
 							<th>Apellido Paterno</th>
 							<th>Apellido Materno</th>
 							<th>Nombres</th>
-							<th></th>
+							<th>Modificar</th>
+							<th>Eliminar</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -40,6 +41,7 @@
 	 							<td><?php echo $fila['materno']; ?></td>
 	 							<td><?php echo $fila['nombres']; ?></td>
 								<td><a href="modificar.datos.php?id=<?php echo $fila['personas_id']; ?>" class="ui-btn ui-shadow ui-corner-all ui-icon-edit ui-btn-icon-notext">Modificar</a></td>
+								<td><a href="eliminar.recibe.php?id=<?php echo $fila['persona_id']; ?>" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext">Eliminar</a></td>
 							</tr>
 						<?php
 							}
